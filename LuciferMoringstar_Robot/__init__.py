@@ -21,7 +21,7 @@ Bot Owner Only
 """
 
 ABOUT = """
-➥ Name :  Auto Filter
+➥ Name :  MF MOVE GROUP
     
 ➥ Creator : [LUCIFER]
 
@@ -29,5 +29,5 @@ ABOUT = """
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
-➥ Tutorial : (https://t.me/MF2move)
+➥ Tutorial : (https://t.me/MF_Movies)
 """
