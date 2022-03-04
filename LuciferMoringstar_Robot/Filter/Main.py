@@ -275,25 +275,19 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 )
                 return
         elif query.data == "help":
-            buttons = [
-                [
-                    InlineKeyboardButton('JOIN', url=f'{TUTORIAL}')
-                ]
-                [
-                    InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")
-                ]
-                ]
+            buttons = [[
+                InlineKeyboardButton('JOIN', url=f'{TUTORIAL}')
+                InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")
+                ]]
+                
             await query.message.edit(text=f"{HELP}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
         elif query.data == "about":
-            buttons = [
-                [
-                    InlineKeyboardButton('JOIN', url=f'{TUTORIAL}')
-                ]
-                [
-                    InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")
-                ]
-                ]
+            buttons = [[
+                InlineKeyboardButton('JOIN', url=f'{TUTORIAL}')
+                InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")
+                ]]
+                
             await query.message.edit(text=f"{ABOUT}", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
 
@@ -316,11 +310,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     [
                         InlineKeyboardButton('JOIN', url=f'{TUTORIAL}')
                     ]
-                    [
-                        InlineKeyboardButton("⏪ BACK", callback_data=f"back_{int(index)+1}_{keyword}")
-                    ]
-                    ]
-                
+                    ]   
+                   
+                    
                 await query.answer()
                 await client.send_cached_media(
                     chat_id=query.from_user.id,
